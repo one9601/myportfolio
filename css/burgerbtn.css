@@ -91,6 +91,11 @@ line-height: 150px;}
     background-color: #fff;
 }
 /* 반응형 */
+@media(max-width:1024px){
+    .main_right_arrow{
+        display: none;
+    }
+}
 @media(max-width:768px){
 .bugerBtn{
 left: 90%;
