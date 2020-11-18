@@ -114,17 +114,16 @@ border: none;
     .bugerBtn{
         left: 85%;
     }
+    .bugerBtn .active{
+        left: 85%;
+    }
 }
 @media(max-width:420px){
     .bugerBtn{
         top: 1%;
     }
 }
-@media(max-width:450px){
-.bugerBtn{
-left: 70%;
-}
-}
+
 @media(max-width:361px){
     .bugerBtn{
         top: 0;
