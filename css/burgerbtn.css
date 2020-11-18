@@ -99,9 +99,10 @@ line-height: 150px;}
         display: none;
     }
 }
-@media(max-width:768px){
+@media(max-width:769px){
 .bugerBtn{
 left: 90%;
+top: 3%;
 border: none;
 }
 
@@ -109,8 +110,23 @@ border: none;
   line-height: 100px;
 }
 }
+@media(max-width:540px){
+    .bugerBtn{
+        left: 85%;
+    }
+}
+@media(max-width:420px){
+    .bugerBtn{
+        top: 1%;
+    }
+}
 @media(max-width:450px){
 .bugerBtn{
 left: 70%;
 }
+}
+@media(max-width:361px){
+    .bugerBtn{
+        top: 0;
+    }
 }
