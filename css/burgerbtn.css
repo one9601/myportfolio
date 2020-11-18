@@ -1,0 +1,108 @@
+/* body{
+    width: 100%;
+    height: auto;
+    position: fixed;
+} */
+header {/* border:1px solid blue;  */
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    z-index: 10000000;
+    position: fixed;
+}
+.bugerBtnBox {
+    background: #f5cc98;
+    border-radius: 100%;
+    color: white;
+    position: absolute;
+    width: 4.29vw;
+    height: 8.6vh;
+    left: 100vw;
+    top: -2vw;
+    transition: all 0.3s;
+}
+.bugerBtnBox.big {width: 115.5vw; height: 233.5vh; left: -7.7vw; top: -64.4vh; position: fixed;}
+.menu ul {position: absolute; width: 37vw; top: 13vw; left: 130vw; z-index: 1000; text-align: left;}
+.menu ul.textMove{animation: fadeInRight .5s ease forwards; animation-delay: .35s; position: fixed;
+line-height: 150px;}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 0vw;
+  }
+  100% {
+    opacity: 1;
+    left: 31vw;
+  }
+}
+.menu ul li{
+    left: 50%;
+    transform: translate(-50% -50%);
+}
+.menu ul li:nth-of-type(1) {margin-top: 0;}
+.menu ul li a { font-size: 5.2vw; display: block; position: relative; color: #fff; text-decoration: none; overflow: hidden; transform: scale(1); transition: all 0.3s; left: -18vw;}
+.menu li a:hover {opacity: 1; transform: scale(1.2); transition: all 0.3s; color: #28368F;}
+.menu li {position: relative; color: #fff; font-weight: normal; font-size: 1.3vw;}
+
+
+/*----------bugerBtn----------*/
+.bugerBtn {
+    position: fixed;
+    display: block;
+    cursor: pointer;
+    top: 12.5%;
+    left: 90%;
+    z-index: 999;
+    padding: 15px;
+    border: 1px solid #ffdeb1;
+}
+.bugerBtn span {
+    display: block;
+    background: black;
+    width: 35px;
+    height: 3px;
+    border-radius: 3px;
+    transition: 0.25s margin 0.25s, 0.25s transform;
+}
+.bugerBtn span:nth-child(1) {
+    margin-bottom: 0.9vh;
+}
+.bugerBtn span:nth-child(3) {
+    margin-top: 0.9vh;
+}
+
+.bugerBtn.active span {
+    transition: 0.25s margin, 0.25s transform 0.25s;
+}
+.bugerBtn.active{
+    border: none;
+}
+
+.bugerBtn.active span:nth-child(1) {
+    display: none;
+}
+.bugerBtn.active span:nth-child(2) {
+    transform: rotate(45deg);
+    background-color: #fff;
+}
+.bugerBtn.active span:nth-child(3) {
+    margin-top: -0.43vh;
+    transform: rotate(135deg);
+    background-color: #fff;
+}
+/* 반응형 */
+@media(max-width:768px){
+.bugerBtn{
+left: 90%;
+border: none;
+}
+
+.menu ul.textMove{
+  line-height: 100px;
+}
+}
+@media(max-width:450px){
+.bugerBtn{
+left: 70%;
+}
+}
